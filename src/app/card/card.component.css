@@ -3,11 +3,17 @@
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
-    background: rgb(226, 229, 231);
+    background-color: #bbe1fa;
+    color: #0f4c75;
   }
 
 .mat-header1{
-  background: rgb(188, 192, 194);
+  background-color: #0f4c75;
+  color: #bbe1fa;
+}
+
+.mat-card-subtitle {
+  color: #bbe1fa;
 }
 
 .mat-card-image2 {
