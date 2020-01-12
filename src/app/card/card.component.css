@@ -1,0 +1,23 @@
+
+.poke-card {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(226, 229, 231);
+  }
+
+.mat-header1{
+  background: rgb(188, 192, 194);
+}
+
+.mat-card-image2 {
+    width: calc(80% + 12px);
+    float: left;
+    margin: 10%;
+    /*margin: 0px -10px 10px -10px;*/
+}
+
+.poke-header-image {
+  background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png');
+  background-size: cover;
+}

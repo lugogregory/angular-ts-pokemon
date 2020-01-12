@@ -1,0 +1,71 @@
+/*----------------------------------------*/
+/*        Estilos del Home
+/*----------------------------------------*/
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, a {
+    color: #263238;
+    font-family: Montserrat;
+    font-size: 15px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 150%;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+h2 {
+    font-size: 115%;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 100%;
+    font-weight: 100;
+    line-height: 32px;
+}
+
+
+/*----------------------------------------*/
+/*           Pokemon Estilos
+/*----------------------------------------*/
+
+.lenguaje{
+    margin-top:60px; 
+    margin-left: 15px;
+}
+
+.pokeContent{
+    margin-top:25px;
+}
+
+.pokeResumen{
+    width: 150px;
+    float: left;
+    margin-left:5px;
+    margin-top: 5px;
+    background-color: #bbe1fa;
+    color: #0f4c75;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.pokeResumen:hover{
+    background-color: #0f4c75;
+    color: #bbe1fa;
+}

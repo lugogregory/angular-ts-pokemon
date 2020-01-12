@@ -1,0 +1,13 @@
+{
+  "HOME": {
+    "TITLE": "POKEMON COLECTION",
+    "SEARCH": "SEARCH",
+    "SELECT": "Change language:",
+    "NEXT": "NEXT",
+    "BACK": "BACK"
+  },
+  "DETAIL": {
+    "TITLE": "POKEMON COLECTION",
+    "BACK": "BACK"
+  }
+}

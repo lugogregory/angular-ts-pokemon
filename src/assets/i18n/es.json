@@ -1,0 +1,13 @@
+{
+    "HOME": {
+      "TITLE": "COLECCION DE POKEMON",
+      "SEARCH": "BUSCAR",
+      "SELECT": "Seleccione el Lenguaje:",
+      "NEXT": "SIGUIENTE",
+      "BACK": "ATRAS"
+    },
+    "DETAIL": {
+      "TITLE": "COLECCION DE POKEMON",
+      "BACK": "ATRAS"
+    }
+}

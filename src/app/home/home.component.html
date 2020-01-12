@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- INICIO de barra de navegacion y search-->
+  <nav class="navbar fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand a-nave" >{{ 'HOME.TITLE' | translate }}</a>
+      <div class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="" [(ngModel)]="buscar" [ngModelOptions]="{standalone: true}" aria-label="Search">
+        <button class="btn btn-outline-info my-2 my-sm-0" [disabled]="!buscar" type="submit" (click)="buscarPokemon()" >{{ 'HOME.SEARCH' | translate }}</button>
+      </div>
+  </nav>
+  <!-- FIN de barra de navegacion y search-->
+  
+  <!-- INICIO seleccion del lenguaje-->
+    <div class="lenguaje">
+        <label>
+            {{ 'HOME.SELECT' | translate }}
+            <select #langSelect (change)="translate.use(langSelect.value)">
+              <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+            </select>
+        </label>
+    </div>
+<!-- FIN seleccion del lenguaje--->
+
+    <div class="container pokeContent"
+    infiniteScroll
+    [infiniteScrollDistance]="0"
+    [infiniteScrollThrottle]="500"
+    (scrolled)="onScroll()" >
+  
+      <div class="row" *ngIf = "inicio">
+          <div class="col-6 col-lg-2 col-md-3 col-sm-4" *ngFor="let pok of pokemones; let i=index">
+              <div class="pokeResumen" [routerLink]= "['/pokemondetalle',i+1,pok.name]">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/{{i+1}}.png" alt="">
+                <a >{{pok.name}}</a>
+              </div>
+          </div>
+      </div>
+      <div class="row" *ngIf = "!inicio">
+        <div class="col-6 col-lg-2 col-md-3 col-sm-4" *ngFor="let poke of pokemonesLista">
+            <div class="pokeResumen" [routerLink]= "['/pokemondetalle',poke.id+1,poke.nombre]">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/{{poke.id+1}}.png" alt="">
+              <a >{{poke.nombre}}</a>
+            </div>
+        </div>
+    </div>
+      
+    </div>
+ 
+</body>
+</html>
+
+
+
+
+
+
+
